@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="UrolojiDB" Class="UrolojiDbDataContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=WISSEN;Initial Catalog=UrolojiDB;User ID=sa" SettingsObjectName="UrolojiApp.Properties.Settings" SettingsPropertyName="UrolojiDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.bDemografik" Member="bDemografiks">
+    <Type Name="bDemografik">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HastaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Yas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Boy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Kilo" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="Bmi" Type="System.Decimal" DbType="Decimal(4,2)" CanBeNull="true" />
+      <Column Name="Asa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dr" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Cins" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="Taraf" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="Lokalizasyon" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Boyut" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ko_Morbit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="bHastaBilgileri_bDemografik" Member="bHastaBilgileri" ThisKey="HastaId" OtherKey="Id" Type="bHastaBilgileri" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bTakip" Member="bTakips">
+    <Type Name="bTakip">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HastaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="P3AyLokal" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="P3AyKreatin" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="P6AyLocal" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="P6AyKreatin" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+      <Column Name="P12AyLokal" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="P12AyKreatin" Type="System.Decimal" DbType="Decimal(3,2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bHastaBilgileri" Member="bHastaBilgileris">
+    <Type Name="bHastaBilgileri">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HastaAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HastaSoyadi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProtokolNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="OperasyonTarihi" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="OperasyonTuru" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Takip" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Anah" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="bHastaBilgileri_bDemografik" Member="bDemografiks" ThisKey="Id" OtherKey="HastaId" Type="bDemografik" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bOperatif" Member="bOperatifs">
+    <Type Name="bOperatif">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HastaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PksAciklama" Type="System.String" DbType="NVarChar(2)" CanBeNull="true" />
+      <Column Name="Sikayet" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CoOperasyon" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Iskemi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PortSayisi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="YardimYnt" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Dren" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Kanama" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Piyes" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bOpTuru" Member="bOpTurus">
+    <Type Name="bOpTuru">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OpTuru" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bPatoloji" Member="bPatolojis">
+    <Type Name="bPatoloji">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HastaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pataloji" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AltGrup" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FuhrmanGrade" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="PatalojikEvre" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="CerrahSinir" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.bPostOperatif" Member="bPostOperatifs">
+    <Type Name="bPostOperatif">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="HastaId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Pek" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PostopAnaliz" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sonda" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HospSuresi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PropKreatin" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="PostOpKreatin" Type="System.Decimal" DbType="Decimal(5,2)" CanBeNull="true" />
+      <Column Name="ProOpHct" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="PostOpHb" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="PostOrHb" Type="System.Decimal" DbType="Decimal(6,2)" CanBeNull="true" />
+      <Column Name="Takip" Type="System.String" DbType="NVarChar(175)" CanBeNull="true" />
+      <Column Name="Tel" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="PostOpGKomp" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="KompKlavien" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

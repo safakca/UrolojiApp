@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 9.75" name="UrolojiDbDataContext">
+  <DataContextMoniker Name="/UrolojiDbDataContextDataContext" />
+  <nestedChildShapes>
+    <classShape Id="377b17f3-8263-43a8-b211-732e36a484a5" absoluteBounds="3.5, 1, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/UrolojiDbDataContextDataContext/bDemografik" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc666ddf-22db-43cb-9421-568d891a88af" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="effecb4a-0e3a-4fdd-8fd4-859168d3de46" absoluteBounds="0.75, 5.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/UrolojiDbDataContextDataContext/bTakip" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d36fa51f-57ef-4871-9439-30ae07903bb6" absoluteBounds="0.765, 6.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="136e3145-040d-4db3-87ca-a3339c902b76" absoluteBounds="0.75, 1.5, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/UrolojiDbDataContextDataContext/bHastaBilgileri" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79a719f4-b2d8-4236-aee1-17c17d28f003" absoluteBounds="0.765, 1.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96627801-29e1-45f4-bc72-d42481df138c" absoluteBounds="3.75, 5.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/UrolojiDbDataContextDataContext/bOperatif" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e142c8a7-ff7c-40fe-84f2-b3a66ca06d81" absoluteBounds="3.765, 6.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="313c40e6-879c-48ac-aee7-b0c3947d621b" absoluteBounds="6.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/UrolojiDbDataContextDataContext/bOpTuru" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05992dc4-761d-4f88-a246-a932527bf79e" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3400297-fd65-494b-bd49-c43eae79bc12" absoluteBounds="6.75, 2.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/UrolojiDbDataContextDataContext/bPatoloji" />
+      <nestedChildShapes>
+        <elementListCompartment Id="678ea020-2b66-4ebf-bf66-416b29584a3d" absoluteBounds="6.765, 3.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8c7a0ed4-cb49-4152-b990-1e7e5caed2b6" absoluteBounds="6.75, 5.75, 2, 3.6939111328124987">
+      <DataClassMoniker Name="/UrolojiDbDataContextDataContext/bPostOperatif" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23c3e554-b7da-4a0f-8464-69f7d4197123" absoluteBounds="6.765, 6.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.67390055338542); (3.5 : 2.67390055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/UrolojiDbDataContextDataContext/bHastaBilgileri/bHastaBilgileri_bDemografik" />
+      <nodes>
+        <classShapeMoniker Id="136e3145-040d-4db3-87ca-a3339c902b76" />
+        <classShapeMoniker Id="377b17f3-8263-43a8-b211-732e36a484a5" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

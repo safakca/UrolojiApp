@@ -1,0 +1,12 @@
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\bin\Debug\UrolojiApp.exe.config
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\bin\Debug\UrolojiApp.exe
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\bin\Debug\UrolojiApp.pdb
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.csprojAssemblyReference.cache
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.frmAnaSayfa.resources
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.Properties.Resources.resources
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.csproj.GenerateResource.cache
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.csproj.CoreCompileInputs.cache
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.exe
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.pdb
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.Model.frmHastaGiris.resources
+C:\Users\Section2\source\repos\UrolojiApp\UrolojiApp\obj\Debug\UrolojiApp.Model.frmOpTuru.resources
